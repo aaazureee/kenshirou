@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Sample</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<style>
+		body {
+			background-image: url(https://i.ytimg.com/vi/4zoLyXSno4s/hqdefault.jpg);
+		}
+				
+		.buttons {
+			text-align: center;
+		}
+		
+		h1 {
+			margin-top: 270px;
+			margin-bottom: 20px;
+			text-align: center;
+			color: white;
+		}
+		
+		h1 > span {
+			background-color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1><span>Fist of the North Star Soundboard</span></h1>
+		<audio id="one" src="assets/omaewamoushindeiru.mp3"></audio>
+		<audio id="two" src="assets/nani.mp3"></audio>
+		<audio id="three" src="assets/atatatata.mp3"></audio>
+		<div class="buttons">
+			<button type="button" role="button" class="btn btn-secondary">Ｏｍａｅ ｗａ ｍｏｕ ｓｈｉｎｄｅｉｒｕ</button>
+			<button type="button" role="button" class="btn btn-secondary">Ｎａｎｉ</button>
+			<button type="button" role="button" class="btn btn-secondary">ＡＴＡＴＡＴＡＴＡＴＡＴＡＴＡＴ</button>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script>
+		$(".buttons button:nth-child(1)").click(function() {
+			$("#one").clone()[0].play();
+		});
+		
+		$(".buttons button:nth-child(2)").click(function() {
+			$("#two").clone()[0].play();
+		});
+		
+		$(".buttons button:nth-child(3)").click(function() {
+			$("#three").clone()[0].play();
+		});
+	</script>
+</body>
+</html>
